@@ -98,7 +98,7 @@ def extend_webapp(session: requests.sessions.Session) -> None:
 
 def main() -> None:
 	auth_session = login(LOGIN, PASSWORD)
-	extend_task(auth_session, TASK_ID)
+	extend_task(auth_session)
 	extend_webapp(auth_session)
 
 
